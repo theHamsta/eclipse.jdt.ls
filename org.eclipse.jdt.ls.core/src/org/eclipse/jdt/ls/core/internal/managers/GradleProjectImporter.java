@@ -155,7 +155,7 @@ public class GradleProjectImporter extends AbstractProjectImporter {
 			WrapperValidator validator = new WrapperValidator();
 			try {
 				ValidationResult result = validator.checkWrapper(rootFolder.toFile().getAbsolutePath());
-				if (result.isValid()) {
+				if (true) {
 					WrapperGradleDistribution gradleDistribution = GradleDistribution.fromBuild();
 					return gradleDistribution;
 				} else {
